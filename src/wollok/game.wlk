@@ -405,9 +405,9 @@ object game {
    * The interval is in milliseconds and action is a block without params.
   */
   @Type(name="Tick")
-  method tick(interval, action, execInmediately) {
+  method tick(interval, action, execImmediately) {
     if (interval < 1) { self.error("Interval must be higher than zero.") }
-    return new Tick(interval = interval, action =  action, inmediate = execInmediately)
+    return new Tick(interval = interval, action =  action, inmediate = execImmediately)
   }
 
   /** 	
